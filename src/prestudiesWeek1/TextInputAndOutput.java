@@ -10,6 +10,6 @@ public class TextInputAndOutput {
 
         System.out.println("Please enter your Name: ");
         String name = s.nextLine();
-        System.out.println(STR."Hello \{name}, Welcome to the training!");
+        System.out.println("Hello " + name + ", Welcome to the training!");
     }
 }

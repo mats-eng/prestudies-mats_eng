@@ -21,10 +21,10 @@ public class Geometry {
         double rightTriangleArea = (a*b)/2;
         double rightTrianglePerimeter = a+b+Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
 
-        System.out.println(STR."The area of the Rectangle is: \{rectangleArea}");
-        System.out.println(STR."The perimeter of the Rectangle is: \{rectanglePerimeter}");
+        System.out.println("The area of the Rectangle is: "+ rectangleArea);
+        System.out.println("The perimeter of the Rectangle is: " + rectanglePerimeter);
 
-        System.out.println(STR."The area of the right triangle is: \{rightTriangleArea}");
+        System.out.println("The area of the right triangle is: " + rightTriangleArea);
         System.out.format(Locale.ENGLISH,"The perimeter of the right triangle is: %.2f", rightTrianglePerimeter);
     }
 }
