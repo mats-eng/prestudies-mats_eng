@@ -9,21 +9,19 @@ public class Guessing_numbers {
 
         int randomNumber = ThreadLocalRandom.current().nextInt(1, 101);
         int i = 0;
+        int guess;
 
-        while (true) {
+        do {
             i += 1;
             System.out.println("Guess the right number (The number is between 1 and 100):");
-            int guess = scanner.nextInt();
-            if (guess == randomNumber) {
-                System.out.println("Congratulations! You guessed the right number! It took you " + i + " guesses.");
-                break; // Die Schleife wird beendet, wenn die richtige Zahl geraten wurde
-            }
-            else if (guess > randomNumber) {
+            guess = scanner.nextInt();
+            if (guess > randomNumber) {
                 System.out.println("Sorry, your number is too high!");
-            }
-            else if (guess < randomNumber) {
+            } else if (guess < randomNumber) {
                 System.out.println("Sorry, your number is too low!");
             }
-        }
+        } while (guess != randomNumber) ;
+        System.out.println("Congratulations! You guessed the right number!");
     }
 }
+

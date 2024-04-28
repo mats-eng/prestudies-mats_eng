@@ -37,6 +37,22 @@ public class Computer {
         this.hasOS = hasOS;
     }
 
+    public String toString() {
+        return "Manufacturer: " + manufactName + "\n" +
+                "Processor Speed: " + processorSpeedMHz + " MHz\n" +
+                "RAM Size: " + ramSizeGb + " GB\n" +
+                "Hard Drive Size: " + hardDriveSizeGb + " GB\n" +
+                "Number of USB Ports: " + numbOfUsbPorts + "\n" +
+                "Screen Size: " + screenSizeInch + " inches\n" +
+                "Computer Type: " + compType + "\n" +
+                "Preinstalled Operating System: " + (hasOS ? "Yes\n" : "No\n");
+    }
+
+    public double calculateProfit() {return sellingPrice - purchasingPrice;}
+
+
+    //Getters and Setters
+
     public String getManufactName() {
         return manufactName;
     }
@@ -123,20 +139,5 @@ public class Computer {
 
     public void setPurchasingPrice(double purchasingPrice) {
         this.purchasingPrice = purchasingPrice;
-    }
-
-    public String toString() {
-        return "Manufacturer: " + manufactName + "\n" +
-                "Processor Speed: " + processorSpeedMHz + " MHz\n" +
-                "RAM Size: " + ramSizeGb + " GB\n" +
-                "Hard Drive Size: " + hardDriveSizeGb + " GB\n" +
-                "Number of USB Ports: " + numbOfUsbPorts + "\n" +
-                "Screen Size: " + screenSizeInch + " inches\n" +
-                "Computer Type: " + compType + "\n" +
-                "Preinstalled Operating System: " + (hasOS ? "Yes\n" : "No\n");
-    }
-
-    public double calculateProfit() {
-        return sellingPrice - purchasingPrice;
     }
 }

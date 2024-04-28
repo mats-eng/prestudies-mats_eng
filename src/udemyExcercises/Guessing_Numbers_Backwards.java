@@ -25,8 +25,7 @@ public class Guessing_Numbers_Backwards{
                 numericalRangeMin = machineAttempt;
             } else if (UserInput.equals("lower")) {
                 numericalRangeMax = machineAttempt;
-            }
-            else {
+            } else {
                 System.out.println("Hint: Only enter \"yes\",\"higher\" or \"lower\".");
                 numberOfGuesses--;
             }
